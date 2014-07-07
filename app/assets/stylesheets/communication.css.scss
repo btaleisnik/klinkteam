@@ -1,0 +1,122 @@
+// Place all the styles related to the communication controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.post {
+	margin: 0 0 30px 120px;
+	padding: 5px 0 30px 0;
+	width: 55%;
+	float: left;
+}
+
+.sidebar {
+	float: right;
+	border: solid black;
+	margin: 0 30px 20px 0;
+	min-width: 350px;
+	padding: 10px;
+	overflow: hidden;
+	color: #2C3E50;
+	font-size: 15px;
+	line-height: 0.7;
+	background-color: white;
+}
+
+.sidebar h1 {
+	margin-top: 0;
+}
+
+.btn {
+	padding: 0 !important;
+}
+
+.btn:focus {
+	outline: 0 !important;
+	color: #428bca !important;
+}
+
+
+.resources_sidebar {
+	position: fixed !important;
+	left: 70%;
+	top: 30%;
+	z-index: 2;
+	border: solid black;
+	margin: 0 30px 20px 0 !important;
+	max-width: 350px;
+	padding: 10px;
+	overflow: hidden;
+	color: #2C3E50;
+	font-size: 15px;
+	line-height: 0.7;
+	background-color: white;
+}
+
+.resources_sidebar h1{
+	margin-top: 0 !important;
+}
+
+.resources_sidebar h2{
+	margin-top: 10px;
+}
+
+
+
+.contact {
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+}
+
+.communication_tools {
+	border-top: 1px solid #ddd;
+	line-height: 1.2 !important;
+}
+
+.my_info ul{
+	line-height: 1.1 !important;
+	list-style-type: none;
+
+}
+
+.communication_tools h4 {
+	margin-left: -30px;
+}
+
+.topic {
+
+	margin: 0 0 30px 0px;
+	padding: 0 0 30px 0;
+	border-bottom: 1px solid #000;
+	font-size: 40px;
+	line-height: 0.7;
+	text-transform: uppercase;
+	color: #2C3E50;
+}
+
+.greeting {
+	color: #3e5770;
+	margin-top: 0;
+}
+
+.modal_body_size {
+	max-height: 400px;
+	overflow: scroll;
+}
+
+
+
+.section {
+	color: #3e5770;
+}
+
+.section a{
+	text-decoration: none !important;
+}
+
+.text_body {
+	width: 80%;
+	font-size: 16px;
+	padding-left: 10px;
+}

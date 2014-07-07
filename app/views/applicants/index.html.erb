@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Klink | Community Director</title>
+</head>
+<body>
+	
+	<%= render 'layouts/header' %>
+
+	<div class="post">
+		<div class="apply_now">
+			<h1 class="topic">Apply now!</h1>
+			<h2 class="greeting">Klink Community Director</h2>
+			<p class="text_body"><span style="color: #FFA800; font-size: 18px;">Finally!</span> The Klink team is hiring! Apply to be a Klink Community Director. It's a part time job. Part work. Part play.</p>
+		</div>
+
+
+			<%= form_for Applicant.new, url: community_director_path, method: 'post' do |f|%>
+		<div class="container row">
+			<div class="general_info col-md-10">
+				<h4>General Information</h4>
+
+				  <div class="form-group">
+				  	<p>Name</p>
+				  	<%= f.text_field :name %>
+				  </div>
+
+				  <div class="form-group">
+				  	<p>School</p>
+				  	<%= f.text_field :school  %>
+				  </div>
+
+				  <div class="form-group">
+				  	<p>Email</p>
+				  	<%= f.email_field :email %>
+				  </div>
+
+				  <div class="form-group">
+				  	<p>Phone Number</p>
+				  	<%= f.text_field :phone_number %>
+				  </div>
+			</div>
+		</div>
+
+		<div class="container row">
+			<div class="app_questions col-md-10">
+				<h4>Application Questions</h4>
+
+				  <div class="form-group">
+				  	<p>1) What are obstacles or threats to Klink's success in your community? How will you overcome these?</p>
+				  	<%= f.text_area :Q1, :size => '65%' %>
+				  </div>
+
+				  <div class="form-group">
+				  	<p>2) What proactive measures can you take to build and maintain positive relationships with the University? This could include student government, IFC, student groups, campus police, health and wellness, etc.</p>
+				  	<%= f.text_area :Q2, :size => '65%' %>
+				  </div>
+
+				  <div class="form-group">
+				  	<p>3) Hypothetical: Your budget for launch week and the week after is $2,000. You have two weeks to plan. How will you achieve high sales and brand recognition?</p>
+				  	<%= f.text_area :Q3, :size => '65%' %>
+				  </div>
+
+				  <div class="form-group">
+				  	<p>4) Hypothetical: Your budget for the month of March is $150. You are receiving 10 average-sized orders per weekend night. What do you do to increase sales?</p>
+				  	<%= f.text_area :Q4, :size => '65%' %>
+				  </div>
+
+				  <div class="form-group">
+				  	<p>5) A local news outlet runs a story describing Klink as a service that promotes binge drinking. The story also argues that Klink makes it easier for underaged drinkers to illegally get alcohol. How might you respond to such a story?</p>
+				  	<%= f.text_area :Q5, :size => '65%' %>
+				  </div>
+
+				  <div class="form-group">
+				  	<p>6) My greek organization regularly goes to the liquor store to stock up for our parties. Convince us to routinely use Klink instead.</p>
+				  	<%= f.text_area :Q5, :size => '65%' %>
+				  </div>
+
+				  <div class="form-group">
+				  	<p>7) Someone approaches you outside of one of your classes and tells you that he used DrinkDrivers the night before and wasn't happy. Delivery took too long and one of the items delivered was different from what he ordered. What do you do?</p>
+				  	<%= f.text_area :Q5, :size => '65%' %>
+				  </div>
+
+				  <div class="form-group">
+				  	<p>8) Off-campus, non-greek households possess great sales potential. What are some ways you could penetrate this market?</p>
+				  	<%= f.text_area :Q5, :size => '65%' %>
+				  </div>
+
+				  <div class="form-group">
+				  	<p>9) Anything else you'd like to add?</p>
+				  	<%= f.text_area :Q5, :size => '65%' %>
+				  </div>
+
+			</div>
+		</div>
+		<div class="container row" style="margin-top: 10px;">
+			<div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</div>
+
+				<% end %>
+		</div>
+	</div>
+	
+
+</body>
+</html>

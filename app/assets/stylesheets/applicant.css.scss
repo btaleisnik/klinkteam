@@ -1,0 +1,40 @@
+// Place all the styles related to the applicant controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.general_info {
+border: solid 1px #000;
+margin-bottom: 20px;
+border-radius: 5px;
+display: block;
+}
+
+.general_info h4{
+/*	border-top: solid 1px #000;
+*/	padding-top: 10px;
+	width: 50%;
+
+}
+
+
+.app_questions {
+max-height: 334px;
+width: 100%;
+overflow-y: scroll;
+border: solid 1px #000;
+border-radius: 5px;
+
+
+}
+
+.app_questions h4 {
+/*	border-top: solid 1px #000;
+*/	padding-top: 10px;
+	width: 50%;
+}
+
+.apply_now {
+	margin-bottom: 20px;
+
+}
+
